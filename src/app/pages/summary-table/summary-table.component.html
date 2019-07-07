@@ -1,0 +1,51 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <!-- Table -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <h3 class="mb-0">INVENTORY SUMMARY</h3>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">Available Quantity</th>
+                <th scope="col">Used Quantity</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of table" >
+                <td>
+                  {{item.id}}
+                </td>
+                <td>
+                  {{item.name}}
+                </td>
+                <td>
+                  {{item.available_quantity}}
+                </td>
+                <td>
+                  {{item.used_quantity}}
+                </td>
+                <td>
+                  <button class="btn btn-primary">Add Product</button>
+                </td>
+                <td>
+                  <button class="btn btn-info">Use Product</button>
+                </td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- Dark table -->
+</div>
